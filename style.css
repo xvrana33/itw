@@ -1,0 +1,100 @@
+*{
+    font-family: 'Arial','Helvetica',sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+header {
+    background-color: #3c1f0a;
+    margin: 0;
+    padding:30px;
+    width: 100%;
+    text-align:left;
+}
+
+header a{
+    font-size:50px;
+    font-style:italic;
+    text-decoration: none;
+    color:white;
+    padding:0;
+}
+
+header #nazev{
+    color: #d5a17c;
+    font-size: 20px;
+    font-style: italic;
+    padding-top:0px;
+    padding-bottom:20px;
+    margin:0;
+}
+
+h2{
+    color: #d5a17c;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    display:inline;
+}
+
+li{
+    display: inline;
+    font-size:13px;
+    padding: 20px;
+}
+
+li a{
+    font-size:13px;  
+}
+
+
+.content{
+    padding:30px;
+}
+
+.o-predmetu{
+    background-color: rgb(101,101,101, .1);
+    width:100%;
+    padding:30px;
+}
+
+.kontakt{
+    background-color: #3c1f0a;
+    margin: 0;
+    padding:30px;
+    width: 100%;
+    text-align:left;
+}
+
+.kontakt dt{
+    color: white;
+}
+
+.kontakt dt a{
+    text-decoration:none;
+    color:#d5a17c;
+}
+
+.kontakt h2 {
+    color:white;
+}
+
+.kontakt ul{
+    list-style-image: url("footer_list_bullet.gif");
+}
+
+.kontakt li{
+
+    display:block;
+    padding:5px;
+}
+
+
+.kontakt li a{
+    text-decoration:none;
+    color:#d5a17c;
+}

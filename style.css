@@ -209,7 +209,7 @@ td{ border-style: inset none inset none;
 
 /*responsive */
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     .footer, .prezentace, .content{
         flex-direction:column;
     }
@@ -250,7 +250,7 @@ td{ border-style: inset none inset none;
   
 }
 
-@media  (max-width:992px) {
+@media screen and (max-width:992px) {
     .header, .footer, .content{
         width:100%;
         margin:0;

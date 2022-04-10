@@ -1,107 +1,74 @@
-* {
-    font-family: Arial,Helvetica ,sans-serif;
-}
+* {font-family: Arial,Helvetica ,sans-serif;}
 
-a{
-    text-decoration: none;
-}
+a{text-decoration: none;}
 
-body{
-    margin:0;
-}
+body{margin:0;}
 
-dt{
-    width:100px;
+dt{max-width:100px;
     font-size: 13px;
     text-align: left;
     float: left;
-    margin: 10px 0 10px 0;
-}
+    margin: 10px 0 10px 0;}
 
-dd{
-    width:200px;
-    text-align: right;
-}
+dd{max-width:200px;
+    text-align: right;}
 
-dd{
-    padding: 0 0 0.25em 0;
-    margin: 0 0 0 100px;
-}
+dd{padding: 0 0 0.25em 0;
+    margin: 0 0 0 100px;}
 
+h1, h2 {color:#b15e23;}
 
-h1, h2 {
-    color:#b15e23;
-}
-
-h2{
-    margin-top: -5px;
-    margin-bottom: -1px;
-}
-
-h4{
-    margin-top: -0.25px;
-    margin-bottom: 5px;
-}
-
-hr{
-    border-top: 2px dotted #b15e23;
+hr{border-top: 2px dotted #b15e23;
     padding:0;
-    margin:0;
-}
+    margin:0;}
 
-table{
-    text-align: center;
+table{text-align: center;
     margin:10px 0 10px 0;
-}
+    width:100%;
+    display: table;
+    border-collapse: separate;
+    overflow-x: hidden;
+    }
 
-table thead{
-    background-color: #d5a17c;
-}
+table thead{ background-color: #d5a17c;}
 
-thead td{
-    border-style: dotted inset inset dotted;
+thead td{ border-style: dotted inset inset dotted;
     border-width: 2px;
-    border-color: black;    
-}
+    border-color: black;}
 
-td{
-    border-style: inset none inset none;
-    border-width: 1.5px;
-}
+td{ border-style: inset none inset none;
+    border-width: 1.5px;}
 
 /* class selector */
 
 .content{
     padding: 30px;
-    width: 960px;
+    max-width: 960px;
     display: block;
     align-content: center;
 }
 
-.content a{
-    color:black;
-}
+.content a{color:black;}
 
 .cviceni img{
-    margin-bottom:-25px;
-    
-}
-.cviceni h4{
-    margin-top: 10px;
+    display:flex;
+    flex-flow: wrap;
 }
 
 .cviceni p{
-    margin-left: 100px;
-    margin-top: -10px;
+    display:flex;
+    margin: auto;
+    padding-left:35%;
 }
 
 .footer{
     line-height: 0.1;
-    padding:30px;
+    padding-top:5%;
     background-color:#3c1f0a;
     align-content: center;
     padding-left:20%;
     display:flex;
+    flex-direction:row;
     gap:25%;
 }
 
@@ -141,75 +108,76 @@ td{
 
 .o-predmetu{
     background-color: rgb(101,101,101, .1);
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align:justify;
     display: block;
     align-content: center;
-    padding-left:20%;
-    padding-right:20%;
+    padding-left:10%;
+    padding-right:10%;
 }
+
 
 .leva{
     display: block;
     width:70%;
-    margin-left:-50px;
 }
 
 .prava{
     display: block;
     width:30%;
-    margin-left:-50px;  
     padding-left:5%;
     background-color:rgb(101,101,101, .1);
 }
 
 .prezentace{
     display: flex;
+    flex-direction: row;
     gap:15%;
     margin: 0 -50px 0 35px;
 }
 
 .cvicenicontent{
-    display:block;
-    margin:50px 100px 100px 0px;
-    padding:15px;
-}
-
-.extra{
-    display:block;
-}
-
-.inside{
-    display:block;
-    padding-left:-50px;
+    display:flex;
+    flex-direction:column;
+    margin:25% 20% 20% 0;
+    padding:2%;
 }
 
 .content{
     display:flex;
     gap: 15%;
+    flex-direction:row;
     padding-left:20%;
-    width:960px;
+    max-width:960px;
     margin-top:-30px;
     margin-bottom:-30px;
 }
+.prehled{
+    display:block;
+}
+
+ .prehled-tab {
+    display:block;
+    align-items: center;
+    width:100%;
+}
+
 .content h2{
     padding:20px;
 }
 
 .icon{
-    margin: -5px -35px -50px -20px;
-    padding:0;
-    display:block;
+    float:left;
 }
 
 .p{
-    margin:-15px 10px 10px 50px ;
+    float:right;
 }
 
 .c{
     margin:-50px -30px 10px -10px;
 }
-
 
 /* id selector */
 
@@ -229,10 +197,6 @@ td{
     margin-bottom: -10px;
 }
 
-#extraextra{
-    display:flex;
-}
-
 #cviceni{
     margin-bottom:-80px;
 }
@@ -242,4 +206,68 @@ td{
     list-style-position: outside;
 } 
 
+
+/*responsive */
+
+@media (max-width:768px) {
+    .footer, .prezentace, .content{
+        flex-direction:column;
+    }
+
+    .header, .footer, .o-predmetu{
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+     .inside{
+        padding-left:0;
+        padding-right:0;
+        margin:0;
+        min-width:100%;
+        display:block;
+    }
+
+    .prava{
+        padding-left:0;
+        padding-right:0;
+        margin:0;
+        min-width:100%;
+    }
+
+    .cvicenicontent{
+        margin:5vw;
+    }
+
+    .souvis{
+        padding-left:10%;
+    }
+   
+    table{
+        margin-top:-5%;
+        margin-left:-10%;
+        min-width:50%;
+    }
+  
+}
+
+@media  (max-width:992px) {
+    .header, .footer, .content{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .footer{
+        gap:15%;
+    }
+
+    .kontakt, .prehled, .menu, #nazev, #ITW, .leva{
+        padding-left:10%;
+    }
+
+   .c{
+       padding-left:15%;
+   }
+
+}
 
